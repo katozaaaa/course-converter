@@ -1,0 +1,7 @@
+// common styles
+@use './normalize.scss';
+@use './fonts.scss';
+@use './global.scss';
+
+// components styles
+@use '../components/components.scss';

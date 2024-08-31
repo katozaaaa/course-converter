@@ -1,0 +1,64 @@
+@use '../../styles/variables.scss' as v;
+@use './ConverterControl/ConverterControl.scss';
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__window {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: v.$color--black;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    &>span {
+      font-family: v.$font-family--mono;
+      font-size: 1.875rem;
+      font-weight: 400;
+      color: v.$color--ui-40;
+    }
+  }
+
+  &__stat {
+    display: grid;
+    grid-template-columns: auto min-content;
+    grid-template-rows: auto auto;
+    gap: 30px 15px;
+  }
+
+  &__stat-values {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style-type: none;
+  }
+
+  &__stat-dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  &__stat-dates, &__stat-values {
+    font-family: v.$font-family--mono;
+    font-size: 0.5rem;
+    color: v.$color--ui-40;
+  }
+
+  &__bottom-text {
+    align-self: flex-end;
+    font-size: 0.75rem;
+    padding: 0 30px;
+  }
+}

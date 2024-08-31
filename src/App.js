@@ -1,12 +1,12 @@
 import React from 'react';
-import * as Components from './components';
+import {Header, Main, Footer} from './components/components.js';
 
 export default function App() {
   return (
     <div id='app'>
-      <Components.Header />
-      <Components.Main />
-      <Components.Footer />
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }

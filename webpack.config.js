@@ -15,7 +15,7 @@ module.exports = {
             template: './src/index.html',
         }),
         new MiniCssExtractPlugin({
-          filename: 'style.css',
+            filename: 'style.css',
         }),
     ],
     module: {
@@ -54,6 +54,7 @@ module.exports = {
         ]
     },
     devServer: {
+        server: 'https',
         static: {
             directory: path.join(__dirname, 'dist'),
         },

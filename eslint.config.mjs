@@ -2,7 +2,6 @@ import globals from "globals";
 import pluginJs from "@eslint/js";
 import pluginReact from "eslint-plugin-react";
 
-
 export default [
   {
     files: ["**/*.{js,mjs,cjs,jsx}"]
@@ -12,11 +11,18 @@ export default [
   },
   pluginJs.configs.recommended,
   pluginReact.configs.flat.recommended,
-  {rules: {
+  {
+    rules: {
         "quotes": ["warn", "single"],
         "jsx-quotes": ["warn", "prefer-double"],
         "indent": ["warn", 4],
     }
-  }
-
+  },
+  {
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
 ];

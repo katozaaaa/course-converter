@@ -1,0 +1,15 @@
+@use '../../styles/variables.scss' as v;
+@use '../Converter/Converter.scss';
+
+.intro {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 848px;
+    }
+
+    &__title {
+      padding: 0 30px;
+    }
+}

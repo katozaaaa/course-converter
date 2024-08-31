@@ -1,0 +1,40 @@
+@use './variables.scss' as v;
+
+html {
+  font-size: 16px;
+}
+
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: v.$font-family--base;
+  background-color: v.$color--white;
+  color: v.$color--black;
+}
+
+picture {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title {
+  font-weight: 700;
+}
+
+h1, h2 {
+    font-weight: 1.5rem;
+    line-height: 140%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 40px;
+  max-width: 1480px;
+  width: 100%;
+}
