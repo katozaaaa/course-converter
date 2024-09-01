@@ -16,6 +16,7 @@ export default [
         "quotes": ["warn", "single"],
         "jsx-quotes": ["warn", "prefer-double"],
         "indent": ["warn", 4],
+        "semi": ["warn"],
     }
   },
   {

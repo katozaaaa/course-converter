@@ -24,14 +24,14 @@ const cb = {
         } else {
             params.map((param, index) => {
                 return `${pathObj.paramsNames}=${paramsValues[index]}`;
-            })
+            });
         }
 
         const endPath = `${cb[pathKey].path}?${params.join('&')}`;
 
         return cb.instance.get(endPath);
     }
-}
+};
 
 export const API = {
     getQuotesOnDate(date) {
